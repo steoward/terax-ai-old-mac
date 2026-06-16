@@ -79,6 +79,9 @@ tauri-plugin-autostart = "2"
 tauri-plugin-updater = "2"
 tauri-plugin-window-state = "2"
 
+# macOS legacy support for 10.15 (Catalina) and Intel Macs
+[target.'cfg(all(target_os = "macos", target_arch = "x86_64"))'.dependencies]
+
 [profile.dev]
 incremental = true
 
