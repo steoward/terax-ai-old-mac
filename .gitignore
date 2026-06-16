@@ -1,28 +1,31 @@
-# Logs
-logs
+```
+# Build outputs
+target/
+**/target/
+
+# Dependencies
+Cargo.lock
+
+# Tauri specific
+src-tauri/target/
+**/src-tauri/target/
+
+# Temporary files
+*.tmp
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-stats.html
+# Environment
+.env
+.env.local
+*.env.*
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
-.idea
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-*.tsbuildinfo
+Thumbs.db
+```
